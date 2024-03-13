@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Safety App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="banner1">
+        <a href="login.html"><img src="img/Logo.png" alt="Safely logo" style="margin-top: 12px;"></a>
+    </div>
+
+    <!-- Container for the content -->
+<div class="container">
+    
+    <!-- Login Form -->
+    <form id="loginForm" onsubmit="authenticate(event)">
+        
+        <input type="text" class="input-box" placeholder="Username" id="username" name="username" required >
+
+        <input type="password" class="input-box" placeholder="Password" id="password" name="password" required>
+
+        <button class="login-button" type="submit">Login</button>
+    </form>
+
+    <!-- New User Sign Up Link -->
+    <a style="margin-left: 250px;" href="signup.html">New User? Sign Up</a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

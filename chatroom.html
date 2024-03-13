@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<!-- Profile Icon -->
+<div class="profile-icon" onclick="toggleProfileMenu()">
+    <img src="images.png" alt="Profile Icon">
+</div>
+
+<!-- Profile Menu -->
+<div class="profile-menu" id="profileMenu">
+    <p>Welcome, <span id="username">Username</span>!</p>
+    <a href="#">Change Password</a>
+    <a href="#">Logout</a>
+</div>
+<body>
+
+    <div class="banner">
+        <a href="signup.html"><img src="img/Logo.png" alt="Safely logo" style="margin-top: 20px;"></a>
+    </div>
+   
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="emergency.html" class="nav">Emergency</a></li>
+        <li><a href="chatroom.html" class="nav">Chat Room</a></li>
+        <li><a href="findme.html" class="nav">Find Me</a></li>
+        <li><a href="tips.html" class="nav">Tips</a></li>
+
+    </ul>
+</nav>
+
+
+<div id="chat-container">
+    <div id="chat-display"></div>
+
+
+    <div id="input-container">
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button onclick="sendMessage()" class="chatroom-button">Send</button>
+    </div>
+</div>
+
+<script src="chatroom.js"></script>
+
+
+
+</body>
+</html>
